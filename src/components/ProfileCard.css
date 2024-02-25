@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+
+.card-container {
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #000000;
+	padding: 30px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+}
+
+
+.card-container .round {
+	border: 1px solid #000000;
+	border-radius: 50%;
+	padding: 1px;
+}
+
+.user_round{
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
+.user_card{
+	color: #000000;
+	padding: 5px 20px;
+	position: relative;
+	width: 450px;
+	max-width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.user_round_plus{
+	position: absolute;
+	top: 0;
+	right:70%;
+	z-index: 1000;
+
+}
+
+.image_container{
+	display: inline-block;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+	border:1px solid black;
+	position: relative;
+	z-index: 100;
+  }
+  .carousel-container {
+    width: 100%; /* Adjust as needed */
+    overflow: hidden;
+  }
+  
+  .slick-slide {
+    min-width:  100%;
+  }
+  
+  .reactionDiv {
+	width: 16%;
+  }
+
+  /* ProfileCard.css */
+/* Tooltip.css */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .tooltip-text {
+    visibility: hidden;
+    background-color: #e2e2e2;
+    color: black;
+    text-align: center;
+    
+    padding: 5px 0;
+    border-radius: 6px;
+    border:  1px solid black;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%; /* Position the tooltip above the text */
+    left: 50%;
+    margin-left: -60px; /* Use half of the width to center the tooltip */
+    width: 120px;
+  }
+  
+  .tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    
+  }

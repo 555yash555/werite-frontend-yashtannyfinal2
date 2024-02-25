@@ -1,0 +1,165 @@
+/* Add your styles to make it look like WhatsApp */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.chat-app {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+}
+
+.chat-list {
+  width: 25%;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+  
+  overflow-y: auto;
+}
+
+.chat {
+  width: 70%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+
+  flex-direction: column;
+  
+  margin-bottom: 7.2rem;
+}
+
+.chat-list-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid black; /* thicker teal border */
+  border-radius: 5px; 
+  padding: 5px; /* increased padding */
+}
+
+.avatar {
+  background-color: #6940aa;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.chat-list-text {
+  flex: 1;
+}
+
+.chat-list-username {
+  font-weight: bold;
+}
+
+.chat-list-last-message {
+  color: #888;
+}
+
+.sent,
+.received {
+  max-width: 70%;
+  word-wrap: break-word;
+  margin-bottom: 5px;
+}
+
+.sent {
+  align-self: flex-end;
+  text-align: right;
+  color: #fff;
+  background-color: #6940aa;
+  border-radius: 10px;
+  padding: 8px 15px;
+}
+
+.received {
+  align-self: flex-start;
+  text-align: left;
+  background-color: #6940aa;
+  border-radius: 10px;
+  padding: 8px 15px;
+  color: white;
+}
+
+.send-message {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  position: sticky;
+  bottom: 0;
+}
+
+.inputt {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+button.rounded {
+  margin-left: 2%;
+  padding: 10px;
+  background-color: #075e54;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.message-icon {
+  cursor: pointer;
+  margin-left: 10px;
+}
+/* Add these styles to your existing CSS */
+
+.new-chat-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.rounded-message-icon {
+
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #6940aa;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+}

@@ -1,0 +1,17 @@
+.carousel-container {
+  width: 100%; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.slick-slide {
+  min-width:  100%;
+}
+.slick-slide{
+  min-width:  100%;
+}
+.slick-active{
+  min-width:  100%;
+}
+.slick-current{
+  min-width:  100%;
+}
